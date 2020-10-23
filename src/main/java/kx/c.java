@@ -501,7 +501,15 @@ public class c{
     byte[] y=B;
     B=new byte[y.length/2];
     int c=12;
-    int d=c, e=B.length, p=0, q, r, s0=0, s=8, t=J, a[]=new int[256];
+    int d=c;
+    int e=B.length;
+    int p=0;
+    int q;
+    int r;
+    int s0=0;
+    int s=8;
+    int t=J;
+    int a[]=new int[256];
     System.arraycopy(y,0,B,0,4);
     B[2]=1;
     J=8;
