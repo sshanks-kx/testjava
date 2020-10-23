@@ -306,7 +306,8 @@ public class c{
     }
     @Override
     public String toString(){
-      int m=i+24000, y=m/12;
+      int m=i+24000;
+      int y=m/12;
       return i==ni?"":i2(y/100)+i2(y%100)+"-"+i2(1+m%12);
     }
     @Override
