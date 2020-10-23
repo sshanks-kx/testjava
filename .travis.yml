@@ -3,5 +3,9 @@ os: linux
 dist: xenial
 jdk:
     - oraclejdk11
+addons:
+    sonarcloud:
+        organization: "sshanks-kx_testjava"
+        token: "$SONAR_KEY"
 script:
-    - mvn verify
+    - mvn clean verify sonar:sonar -Dsonar.projectKey=sshanks-kx_testjava
