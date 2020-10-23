@@ -5,7 +5,7 @@ jdk:
     - oraclejdk11
 addons:
     sonarcloud:
-        organization: "sshanks-kx_testjava"
+        organization: "sshanks-kx"
         token: "$SONAR_KEY"
 script:
     - mvn clean verify sonar:sonar -Dsonar.projectKey=sshanks-kx_testjava
